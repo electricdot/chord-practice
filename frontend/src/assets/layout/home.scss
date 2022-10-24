@@ -1,0 +1,9 @@
+.home-container {
+	background: $black-bg;
+	display: grid;
+	grid-template-rows: max-content;
+	height: 100%;
+
+	align-items: flex-start;
+	justify-content: center;
+}

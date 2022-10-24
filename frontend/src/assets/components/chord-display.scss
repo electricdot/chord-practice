@@ -1,0 +1,60 @@
+.chord-display {
+	width: 500px;
+	height: 500px;
+
+	background: $almost-white;
+	border-radius: 100rem;
+	position: relative;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+	.inner {
+		display: grid;
+		grid-auto-flow: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+	}
+	.note {
+		font-size: 7rem;
+		font-weight: 700;
+	}
+	.sign {
+		font-family: "Murecho", sans-serif;
+		font-size: 5rem;
+		font-weight: 600;
+	}
+	.name {
+		vertical-align: super;
+		font-size: 4rem;
+	}
+}
+
+.fingerings {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: max-content;
+	justify-content: start;
+	justify-self: center;
+	gap: 1rem;
+
+	.fingering {
+		background: $almost-white;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+		border-radius: 1rem;
+
+		svg {
+			display: block;
+			width: 150px;
+			height: auto;
+		}
+	}
+}

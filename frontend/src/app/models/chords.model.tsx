@@ -22,9 +22,19 @@ export const chords = [
 		group: 'sevens',
 		fingers: ['+8x888x', 'x+3534x'],
 	},
+	{
+		name: 'Dom7',
+		group: '',
+		fingers: ['+8x898x', 'x+3535x'],
+	},
+	{
+		name: 'Min7(♭5)',
+		group: '',
+		fingers: ['+8x887x', 'x+3434x'],
+	},
 
 	{
-		name: 'dom7sus4',
+		name: 'Dom7sus4',
 		group: '',
 		fingers: ['+7x797x', 'x+3536x'],
 	},
@@ -34,7 +44,7 @@ export const chords = [
 		fingers: ['+8x899x', 'x+3635x'],
 	},
 	{
-		name: 'dim7',
+		name: 'Dim7',
 		group: '',
 		fingers: ['+8x787x', 'x+3424x'],
 	},
@@ -120,7 +130,7 @@ export const chords = [
 	{
 		name: 'Min9/Maj7',
 		group: '',
-		fingers: ['+7x8779x', 'x+3143x'],
+		fingers: ['+7x8779', 'x+3143x'],
 	},
 	{
 		name: '7(♭9 ♭13)',

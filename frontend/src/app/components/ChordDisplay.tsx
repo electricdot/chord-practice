@@ -42,11 +42,15 @@ export const ChordDisplay = observer(() => {
 		);
 	}
 
+	const note = chord.note[0];
+	const sign = chord.note.length === 2 ? chord.note[1] : '';
+
 	return (
 		<>
 			<div className="chord-display" onClick={updateChord}>
 				<div className="inner">
-					<span className="note">{chord.note}</span>
+					<span className="note">{note}</span>
+					<span className="sign">{sign}</span>
 					<span className="name">{chord.name}</span>
 				</div>
 			</div>

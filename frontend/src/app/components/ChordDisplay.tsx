@@ -27,11 +27,18 @@ export const ChordDisplay = observer(() => {
 
 	if (!chord) {
 		return (
-			<div className="chord-display" onClick={updateChord}>
-				<div className="inner">
-					<span className="note">START</span>
+			<>
+				<div className="chord-display" onClick={updateChord}>
+					<div className="inner">
+						<span className="note">START</span>
+					</div>
 				</div>
-			</div>
+				<div className="content">
+					<p>Inspired by Tim Miller's Back to Basics course. </p>
+					<p>Use this tool to memorise and practice chords, as well as learn the position of the notes on the fretboard.</p>
+					<p>Press space or click to load the next random chord.</p>
+				</div>
+			</>
 		);
 	}
 

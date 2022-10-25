@@ -7,6 +7,11 @@
 	position: relative;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0 0 2rem rgba($color: $almost-white, $alpha: 0.5);
+	}
 
 	.inner {
 		display: grid;
@@ -56,5 +61,14 @@
 			width: 150px;
 			height: auto;
 		}
+	}
+}
+
+.content {
+	color: $almost-white;
+	max-width: 500px;
+
+	p {
+		margin-bottom: 1rem;
 	}
 }

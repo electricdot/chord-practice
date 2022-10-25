@@ -47,7 +47,6 @@ export const ChordDisplay = observer(() => {
 			<div className="chord-display" onClick={updateChord}>
 				<div className="inner">
 					<span className="note">{chord.note}</span>
-					<span className="sign">{chord.sign}</span>
 					<span className="name">{chord.name}</span>
 				</div>
 			</div>

@@ -1,5 +1,4 @@
-export const notes = 'ABCDEFG';
-export const signs = [' ', '♯', '♭'];
+export const notes = ['C', 'C♯', 'D♭', 'D', 'D♯', 'E♭', 'E', 'F', 'F♯', 'G♭', 'G', 'G♯', 'A♭', 'A', 'A♯', 'B', 'B♭'];
 export const chords = [
 	{
 		name: 'Maj',
@@ -153,14 +152,12 @@ export const chords = [
 export const getRandomChord = () => {
 	return {
 		note: notes[Math.floor(Math.random() * notes.length)],
-		sign: signs[Math.floor(Math.random() * signs.length)],
 		...chords[Math.floor(Math.random() * chords.length)],
 	};
 };
 
 export interface IChord {
 	note: string;
-	sign: string;
 	name: string;
 	group: string;
 	fingers: string[];
